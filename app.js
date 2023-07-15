@@ -9,9 +9,13 @@ function getRandomElement(arr) {
 function getRandomNumber() {
     return Math.floor(Math.random() * 999) + 1
 }
-
-var randomEmotion = getRandomElement(emotion)
-var randomColor = getRandomElement(color)
-var randomAnimal = getRandomElement(animal)
-var randomNumber = getRandomNumber()
-var nickName = randomEmotion + "_" + randomColor + "_" + randomAnimal + "_" + randomNumber
+function generateName() {
+    var randomEmotion = getRandomElement(emotion)
+    var randomColor = getRandomElement(color)
+    var randomAnimal = getRandomElement(animal)
+    var randomNumber = getRandomNumber()
+    var nickName = randomEmotion + "_" + randomColor + "_" + randomAnimal + "_" + randomNumber
+    
+    var element = document.getElementById("completedName")
+    element.textContent = nickName
+}
