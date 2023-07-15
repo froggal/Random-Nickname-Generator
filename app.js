@@ -14,3 +14,4 @@ var randomEmotion = getRandomElement(emotion)
 var randomColor = getRandomElement(color)
 var randomAnimal = getRandomElement(animal)
 var randomNumber = getRandomNumber()
+var nickName = randomEmotion + "_" + randomColor + "_" + randomAnimal + "_" + randomNumber
